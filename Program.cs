@@ -5,9 +5,9 @@ using File = System.IO.File;
 
 var clientId = "<Client App ID>";
 var clientSecret = "<Client App Secret>";
-var tenantName = "<tenant>.onmicrosoft.com";  //for example contosob2c.onmicrosoft.com
-var PolicySignUpSignIn = "<sign-up or sign-in userflow>"; //for example b2c_1_susi
-var AuthorityBase = $"https://<tenant>.b2clogin.com/tfp/{tenantName}/";
+var tenantName = "<tenant>.onmicrosoft.com";  //for example "contosob2c.onmicrosoft.com"
+var PolicySignUpSignIn = "<sign-up or sign-in userflow>"; //for example "b2c_1_susi"
+var AuthorityBase = $"https://<tenant>.b2clogin.com/tfp/{tenantName}/";  // for example "https://contosob2c.b2clogin.com/tfp/contosob2c.onmicrosoft.com/"
 var Authority = $"{AuthorityBase}{PolicySignUpSignIn}";
 
 string[] scopes = { $"<web API URI>/.default" };
